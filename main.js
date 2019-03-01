@@ -921,10 +921,10 @@ Game.Launch=function()
 			return result;
 		}
 		
-		Game.cookiesEarned=0;//all cookies earned during gameplay
-		Game.cookies=0;//cookies
-		Game.cookiesd=0;//cookies display
-		Game.cookiesPs=1;//cookies per second (to recalculate with every new purchase)
+		Game.cookiesEarned=10000;//all cookies earned during gameplay
+		Game.cookies=1000;//cookies
+		Game.cookiesd=1;//cookies display
+		Game.cookiesPs=10000;//cookies per second (to recalculate with every new purchase)
 		Game.cookiesReset=0;//cookies lost to resetting (used to determine prestige and heavenly chips)
 		Game.cookieClicks=0;//+1 for each click on the cookie
 		Game.goldenClicks=0;//+1 for each golden cookie clicked (all time)
