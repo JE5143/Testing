@@ -68,7 +68,14 @@ target-densityDpi=device-dpi"/>
 				<script>
 				function myFunction() {
     					document.getElementById("linkVersionBeta");
-					Game.Notify("GGG", "E Z")
+					Game.Notify("Hacks Enabled?", "Test")
+					if (AutoClicker === true) {
+						ClickerOff()
+						Game.Notify("AutoClicker Disabled", "Your AutoClicker Has Been Disabled!")
+					} else if (AutoClicker === false);{
+						ClickerOn()
+						Game.Notify("AutoClicker Enabled", "Your AutoClicker Has Been Enabled!")
+					}
 				}
 				</script>
 			</div>
