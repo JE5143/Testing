@@ -83,10 +83,11 @@ target-densityDpi=device-dpi"/>
 			function myFunction() {
   				var x = document.getElementById('test');
   				if (x.style.display === "none") {
-					document.getElementById(test).style.visibility = "block";
+					document.getElementById(test).style.display = "block";
 					x.style.visibility = "visible"
   				} else {
     					x.style.display = "none";
+					x.style.visibility = "visible"
   				}
 			}
 			break;
