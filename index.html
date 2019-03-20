@@ -80,6 +80,9 @@ target-densityDpi=device-dpi"/>
 				var notifyDelay = 50;
 				var autoClickDelay = 100; 
 				var clickDelay = 50;     //1000 = 1 second 60000 = 1 minute
+				var lClicker;
+				var notify;
+				var AutoClicker;
 				function addCookies(p1) {
   					Game.Earn(p1)
 				} // USAGE: addCookies(<amount>) 
@@ -93,7 +96,6 @@ target-densityDpi=device-dpi"/>
   					var lump = Game.lumps;
   					Game.lumps = lump + p1;
 				} // USAGE: addlumps(<amount>)
-				var notify
 				function NotifyOff(){
   					Notify = setInterval(function () {
     					Game.CloseNotes();
@@ -102,7 +104,6 @@ target-densityDpi=device-dpi"/>
 				function NotifyOn(){
   					clearInterval(Notify)
 				}
-				var AutoClicker
 				function ClickerOn(){
   					AutoClicker = setInterval(function () {
     						Game.ClickCookie();
@@ -111,7 +112,6 @@ target-densityDpi=device-dpi"/>
 				function ClickerOff(){
   					clearInterval(AutoClicker)
 				}
-				var lClicker
 				function LClickerOn(){
   					LClicker = setInterval(function () {
   						Game.ObjectsById[0].levelUp();
