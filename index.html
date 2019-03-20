@@ -69,11 +69,7 @@ target-densityDpi=device-dpi"/>
 				<script>
 				var aclicker;
 				function myFunction() {
-					if (aclicker === null) {
-						ClickerOn()
-						Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
-						aclicker = false
-					} else if (aclicker === false) {
+					if (aclicker === false) {
 						ClickerOff()
 						Game.Notify("AutoClicker Disabled", "AutoClicker has been disabled")
 						aclicker = true;
@@ -81,6 +77,11 @@ target-densityDpi=device-dpi"/>
 						ClickerOn()
 						Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
 						aclicker = false;
+					}
+					if (aclicker === null);{
+						ClickerOn()
+						Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
+						aclicker = false
 					}
 				}
 				function clickeroff() {
