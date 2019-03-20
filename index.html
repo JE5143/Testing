@@ -52,9 +52,9 @@ target-densityDpi=device-dpi"/>
 		<div style="position:relative;"><div style="width:25px;height:32px;background:url(img/weeHoodie.png);position:absolute;left:-2px;top:0px;pointer-events:none;"></div><a class="blueLink" href="http://www.redbubble.com/people/dashnet" target="_blank" style="padding-left:12px;">Cookie Clicker merch & stickers!</a></div>
 		<div><a href="http://orteil.dashnet.org/randomgen/" target="_blank">RandomGen</a></div>
 		<div id="links" class="hoverer">
-			Other
+			Other Stuff
 			<script>
-        			if (CCH = true):{
+        			 if (CCH = true):{
 					var button = document.getElementById("linkVersionOld");
 					button.style.display = 'block';
 				}
@@ -67,9 +67,21 @@ target-densityDpi=device-dpi"/>
 			<a  onclick="myFunction()" id="clickeron" target="_blank">Enable AutoClicker</a>
 			<a  onclick="clickeroff()" id="clickeroff" target="_blank">Disable AutoClicker</a>
 				<script>
+				var aclicker;
 				function myFunction() {
-					ClickerOn()
-					Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
+					if (aclicker === null) {
+						ClickerOn()
+						Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
+						aclicker = false
+					} else if (aclicker === false) {
+						ClickerOff()
+						Game.Notify("AutoClicker Disabled", "AutoClicker has been disabled")
+						aclicker = true;
+					} else if (aclicker === true);{
+						ClickerOn()
+						Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
+						aclicker = false;
+					}
 				}
 				function clickeroff() {
 					ClickerOff()
