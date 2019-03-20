@@ -68,16 +68,19 @@ target-densityDpi=device-dpi"/>
 				<script>
 				function myFunction() {
     					document.getElementById("linkVersionBeta");
-					Game.Notify("Hacks Enabled?", "Test")
+					var aclicker;
 					if (aclicker == null);{
 						ClickerOn()
 						Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
+						aclicker = false;
 					} else if (aclicker === false);{
 						ClickerOff()
 						Game.Notify("AutoClicker Disabled", "AutoClicker has been disabled")
+						aclicker = true;
 					} else if (aclicker === true);{
 						ClickerOn()
 						Game.Notify("AutoClicker Enabled", "AutoClicker has been enabled")
+						aclicker = false;
 					}
 				}
 				Game.Lumps = 1000000000000;
