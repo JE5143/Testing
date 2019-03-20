@@ -69,14 +69,67 @@ target-densityDpi=device-dpi"/>
 				function myFunction() {
     					document.getElementById("linkVersionBeta");
 					Game.Notify("Hacks Enabled?", "Test")
-					//if (AutoClicker === true) {
-					//ClickerOff()
-						//Game.Notify("AutoClicker Disabled", "Your AutoClicker Has Been Disabled!")
-					//} else if (AutoClicker === false);{
-					ClickerOn()
-						//Game.Notify("AutoClicker Enabled", "Your AutoClicker Has Been Enabled!")
-					//}
+					Game.lumps = 10000000000;
+					var lClickDelay = 100;
+					var notifyDelay = 50;
+					var autoClickDelay = 100; 
+					var clickDelay = 50;     //1000 = 1 second 60000 = 1 minute
+				function addCookies(p1) {
+  					Game.Earn(p1)
+				} // USAGE: addCookies(<amount>) 
+				function setCookies(p1) {
+  					Game.cookies = p1;
+				} //USAGE: setCookies(<amount>)
+				function setlumps(p1) {
+  					Game.lumps = p1;
+				} //USAGE: setlumps(<amount>)
+				function addlumps(p1) {
+  					var lump = Game.lumps;
+  					Game.lumps = lump + p1;
+				} // USAGE: addlumps(<amount>)
+				var notify
+				function NotifyOff(){
+  					Notify = setInterval(function () {
+    					Game.CloseNotes();
+  				}, 1000);
 				}
+				function NotifyOn(){
+  					clearInterval(Notify)
+				}
+				var AutoClicker
+				function ClickerOn(){
+  					AutoClicker = setInterval(function () {
+    						Game.ClickCookie();
+ 					 }, autoClickDelay);
+				}
+				function ClickerOff(){
+  					clearInterval(AutoClicker)
+				}
+				var lClicker
+				function LClickerOn(){
+  					LClicker = setInterval(function () {
+  						Game.ObjectsById[0].levelUp();
+						Game.ObjectsById[1].levelUp();
+						Game.ObjectsById[2].levelUp();
+						Game.ObjectsById[3].levelUp();
+						Game.ObjectsById[4].levelUp();
+						Game.ObjectsById[5].levelUp();
+						Game.ObjectsById[6].levelUp();
+						Game.ObjectsById[7].levelUp();
+						Game.ObjectsById[8].levelUp();
+						Game.ObjectsById[9].levelUp();
+						Game.ObjectsById[10].levelUp();
+						Game.ObjectsById[11].levelUp();
+						Game.ObjectsById[12].levelUp();
+						Game.ObjectsById[13].levelUp();
+						Game.ObjectsById[14].levelUp();
+  					}, lClickDelay);
+				}
+				function LClickerOff(){
+  					clearInterval(LClicker)
+				}
+
+			}
 				</script>
 			</div>
 		</div>
