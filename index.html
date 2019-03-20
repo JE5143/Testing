@@ -1,32 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<SCRIPT>
-		function passWord() {
-		var testV = 1;
-		var pass1 = prompt('Please Enter Your Password',' ');
-		while (testV < 3) {
-		if (!pass1) 
-		history.go(-1);
-		if (pass1.toLowerCase() == "letmein") {
-		alert('You Got it Right!');
-		window.open('protectpage.html');
-		break;
-		} 
-		testV+=1;
-		var pass1 = 
-		prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-		}
-		if (pass1.toLowerCase()!="password" & testV ==3) 
-		history.go(-1);
-		return " ";
-		} 
-	</SCRIPT>
-		<CENTER>
-		<FORM>
-			<input type="button" value="Enter Protected Area" onClick="passWord()">
-		</FORM>
-		</CENTER>
 <script src="/cdn-cgi/apps/head/0qgk9sTk1hPaj4RmmbOPMlTGE6w.js"></script><script type="text/javascript">
     window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"http://orteil.dashnet.org/cookieconsentpolicy.html","target":"_blank","theme":"http://orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
 </script>
@@ -93,6 +67,32 @@ target-densityDpi=device-dpi"/>
 			<a  onclick="NotifyOff()" id="notifyoff" target="_blank">Notifications Off</a>
 			<a  onclick="myFunction()" id="clickeron" target="_blank">Enable AutoClicker</a>
 			<a  onclick="clickeroff()" id="clickeroff" target="_blank">Disable AutoClicker</a>
+		<SCRIPT>
+		function passWord() {
+		var testV = 1;
+		var pass1 = prompt('Please Enter Your Password',' ');
+		while (testV < 3) {
+		if (!pass1) 
+		history.go(-1);
+		if (pass1.toLowerCase() == "letmein") {
+		alert('You Got it Right!');
+		window.open('protectpage.html');
+		break;
+		} 
+		testV+=1;
+		var pass1 = 
+		prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+		}
+		if (pass1.toLowerCase()!="password" & testV ==3) 
+		history.go(-1);
+		return " ";
+		} 
+		</SCRIPT>
+		<CENTER>
+		<FORM>
+		<input type="button" value="Enter Protected Area" onClick="passWord()">
+		</FORM>
+		</CENTER>
 				<script>
 				function myFunction() {
 					ClickerOn()
