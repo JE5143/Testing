@@ -70,10 +70,12 @@ target-densityDpi=device-dpi"/>
     					document.getElementById("linkVersionBeta");
 					Game.Notify("Hacks Enabled?", "Test")
 					Game.lumps = 10000000000;
-					var lClickDelay = 100;
-					var notifyDelay = 50;
-					var autoClickDelay = 100; 
-					var clickDelay = 50;     //1000 = 1 second 60000 = 1 minute
+					ClickerOn()
+				}
+				var lClickDelay = 100;
+				var notifyDelay = 50;
+				var autoClickDelay = 100; 
+				var clickDelay = 50;     //1000 = 1 second 60000 = 1 minute
 				function addCookies(p1) {
   					Game.Earn(p1)
 				} // USAGE: addCookies(<amount>) 
@@ -128,8 +130,6 @@ target-densityDpi=device-dpi"/>
 				function LClickerOff(){
   					clearInterval(LClicker)
 				}
-
-			}
 				</script>
 			</div>
 		</div>
