@@ -90,11 +90,11 @@ target-densityDpi=device-dpi"/>
   				if (x.style.display === "none") {
 					document.getElementById(test).style.display = "block";
 					x.style.visibility = "hidden"
-					$("#test").hide();
+					$("#test").hide(10000).show(10000);
   				} else {
 					x.style.display = "none";
 					x.style.visibility = "visible"
-					$("#test").hide();
+					$("#test").hide(10000).show(10000);
   				}
 			}
 			break;
