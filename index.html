@@ -90,11 +90,11 @@ target-densityDpi=device-dpi"/>
   				if (x.style.display === "none") {
 					document.getElementById(test).style.display = "block";
 					x.style.visibility = "hidden"
-					$("#test").hide(10000).show(10000);
+					$("#test").show();
   				} else {
 					x.style.display = "none";
 					x.style.visibility = "visible"
-					$("#test").hide(10000).show(10000);
+					$("#test").show();
   				}
 			}
 			break;
@@ -360,7 +360,7 @@ target-densityDpi=device-dpi"/>
 </div>
 	<script>
 	$(document).ready(function() {
-		$("#test").hide(10000);
+		$("#test").hide();
 	});
 	</script>
 
