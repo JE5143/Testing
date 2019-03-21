@@ -363,6 +363,9 @@ target-densityDpi=device-dpi"/>
 	$(document).ready(function() {
 		$("#test").hide();
 		Game.Notify("sss","sss")
+		$( "#test" ).one( "click", function() {
+  			$("#test").hide();
+		});
 	});
 	</script>
 
