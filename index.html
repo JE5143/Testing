@@ -85,13 +85,15 @@ target-densityDpi=device-dpi"/>
 		if (pass1.toLowerCase() == "letmein") {
 			alert('You Got it Right!');
 			function myFunc() {
-  				var x = document.getElementById('test');
+  				var x = document.getElementById("test");
   				if (x.style.display === "none") {
 					document.getElementById(test).style.display = "block";
-					x.style.visibility = "visible"
+					x.style.visibility = "hidden"
+					$("#test").hide();
   				} else {
-    					x.style.display = "none";
+					x.style.display = "none";
 					x.style.visibility = "visible"
+					$("#test").hide();
   				}
 			}
 			break;
