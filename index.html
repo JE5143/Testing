@@ -360,14 +360,9 @@ target-densityDpi=device-dpi"/>
 
 </div>
 	<script>
-	$(document).ready(function() {
+	$(document).one().ready(function() {
 		$("#test").hide();
-		Game.Notify("sss","sss")
 		console.log("FUCK")
-		$( "#test" ).one( "click", function() {
-  			$("#test").hide();
-			console.log("FUCK")
-		});
 	});
 	</script>
 
