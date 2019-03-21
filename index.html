@@ -84,8 +84,8 @@ target-densityDpi=device-dpi"/>
 		history.go(-1);
 		if (pass1.toLowerCase() == "letmein") {
 			alert('You Got it Right!s');
-			$("#tests").show();
-			$("#test").show();
+			$("#s").click(function(){
+   				$("p").hide();
 			function passExecute() {
   				var x = document.getElementById("test");
 				console.log("testtt")
@@ -105,7 +105,7 @@ target-densityDpi=device-dpi"/>
 		</SCRIPT>
 		<CENTER>
 		<FORM>
-		<input type="button" target="_blank"value="Enter Protected Area" onClick="passWord()">
+		<input type="button" target="_blank" id="s" value="Enter Protected Area" onClick="passWord()">
 		</FORM>
 		</CENTER>
 				<script>
