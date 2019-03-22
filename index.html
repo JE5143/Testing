@@ -86,7 +86,9 @@ target-densityDpi=device-dpi"/>
 			alert('You Got it Right!');
 			function myFunc() {
 				$("#tests").show();
-				$("#test").show();
+  				$("#show").click(function(){
+    					$("#tests").show();
+  				});
 			}
 			break;
 		} 
