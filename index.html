@@ -172,6 +172,7 @@ target-densityDpi=device-dpi"/>
 				function addC(){
 					var cook = prompt('Enter the amount of cookies',' ');
 					Game.Notify("Test", cook)
+					history.go(-1);
 					Game.Earn(cook)
 				}
 
