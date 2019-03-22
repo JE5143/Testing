@@ -81,20 +81,20 @@ target-densityDpi=device-dpi"/>
 		var testV = 1;
 		var pass1 = prompt('Please Enter Your Password',' ');
 		while (testV < 3) {
-			if (!pass1) 
-			history.go(-1);
-			if (pass1.toLowerCase() == "letmein") {
-				alert('You Got it Right!');
-				Game.Notify("tessst", "tessst");
-    				$("#tests").show();
-			} 
-			testV+=1;
-			var pass1 = 
-			prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+		if (!pass1) 
+		history.go(-1);
+		if (pass1.toLowerCase() == "letmein") {
+		alert('You Got it Right!');
+		$("#tests").show();
+		break;
+		} 
+		testV+=1;
+		var pass1 = 
+		prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
 		}
 		if (pass1.toLowerCase()!="password" & testV ==3) 
-			return " ";
-		}
+		return " ";
+		} 
 		</SCRIPT>
 		<CENTER>
 		<FORM>
