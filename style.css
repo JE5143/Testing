@@ -2856,4 +2856,25 @@ MOBILE
 .mobile #focusButtons, .mobile #compactOverlay/*, .mobile #buildingsTitle*/
 {display:block;}
 
+/* unvisited link */
+p:link {
+  color: green;
+}
+
+/* visited link */
+p:visited {
+  color: green;
+}
+
+/* mouse over link */
+p:hover {
+  color: red;
+}
+
+/* selected link */
+p:active {
+  color: yellow;
+}
+
+
 /**{overflow:hidden!important;}*/
