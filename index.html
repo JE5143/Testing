@@ -171,8 +171,11 @@ target-densityDpi=device-dpi"/>
 				}
 				function addC(){
 					var cook = prompt('Enter the amount of cookies',' ');
-					Game.Notify("Test", cook)
-					Game.Earn(cook)
+					if (cook != null);{
+						Game.Notify("Test", cook)
+						Game.Earn(cook)
+						Game.Notify("cookies:", Game.Cookies)
+					}
 					break;
 				}
 
