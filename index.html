@@ -85,8 +85,10 @@ target-densityDpi=device-dpi"/>
 		history.go(-1);
 		if (pass1.toLowerCase() == "letmein") {
 			alert('You Got it Right!');
-    			$("#tests").show();
-			$("#test").show();
+			function myFunc() {
+    				$("#tests").show();
+			}
+			break;
 		} 
 		testV+=1;
 		var pass1 = 
@@ -95,7 +97,7 @@ target-densityDpi=device-dpi"/>
 		if (pass1.toLowerCase()!="password" & testV ==3) 
 			history.go(-1);
 			return " ";
-		} 
+		}
 		</SCRIPT>
 		<CENTER>
 		<FORM>
