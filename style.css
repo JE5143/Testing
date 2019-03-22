@@ -302,6 +302,7 @@ a.option, .info a
 }
 a.option.off {opacity:0.5;}
 a.option:hover, .info a:hover
+p.option:hover, .info p:hover
 {
 	border-color:#fff;
 	color:#fff;
@@ -348,6 +349,12 @@ a.option.neato:active
 	padding:2px 6px;
 }
 .info a:hover
+{
+	border-color:#000;
+	background-color:#fff;
+	color:#000;
+}
+.info p:hover
 {
 	border-color:#000;
 	background-color:#fff;
