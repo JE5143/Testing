@@ -57,7 +57,7 @@ target-densityDpi=device-dpi"/>
 		<div><a href="http://orteil.dashnet.org/randomgen/" target="_blank">RandomGen</a></div>
 		<style>
 		</style>
-		<div id ="links2" class="hoverer">
+		<div id ="links2" class="hoverer" style="display:none;">
 			hover test
 			<button onclick="showhax()" style="display:none;" target="_blank" id="tests">Click Me</button>
 			<div class="hoverable">
@@ -191,6 +191,7 @@ target-densityDpi=device-dpi"/>
 					}
 				}
 				function showhax() {
+					$("#links2").toggle();
 					$("#lclickeron2").toggle();
 					$("#lclickeroff2").toggle();
 					$("#clickeron2").toggle();
