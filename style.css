@@ -404,18 +404,19 @@ oh forget it this is just a mess
 #topBar a.blueLink:hover
 {color:#28f;text-shadow:0px 0px 3px #06c;}
 
-#topBar>#links
+#topBar>#links2
 {
 	display:block;
-	position:absolute;
 	right:0px;
 	top:0px;
 	z-index:10000000;
 	float:none;
 }
-#topBar>#links2
+
+#topBar>#links
 {
 	display:block;
+	position:absolute;
 	right:0px;
 	top:0px;
 	z-index:10000000;
