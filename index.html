@@ -86,6 +86,7 @@ target-densityDpi=device-dpi"/>
 			<a  onclick="myFunction()" id="clickeron" target="_blank">Enable AutoClicker</a>
 			<a  onclick="clickeroff()" id="clickeroff" target="_blank">Disable AutoClicker</a>
 			<a  onclick="addC()" id="addcookies" target="_blank">add cookies</a>
+			<a  onclick="addL()" id="addlumps" target="_blank">add Lumps/a>
 			<a  onclick="passWord()" id="fuk" target="_blank">test</a>
 		<SCRIPT>
 		function passWord() {
@@ -178,10 +179,19 @@ target-densityDpi=device-dpi"/>
 					var cook = prompt('Enter the amount of cookies',' ');
 					if (cook != null);{
 						addCookies(parseInt(cook))
-						Game.Notify("test", "test")
+						Game.Notify("added cookies", "added" + cook + "Cookies")
 					}
 					if (cook = " ");{
-					    Game.Notify("testasdasd", "it works!!!!")
+					    Game.Notify("ERROR", "You did not input a number!")
+					}
+				function addL(){
+					var lump = prompt('Enter the amount of lumps',' ');
+					if (lump != null);{
+						addLumps(parseInt(lump))
+						Game.Notify("added cookies", "added" + lump + "Lumps")
+					}
+					if (cook = " ");{
+					    Game.Notify("ERROR", "You did not input a number!")
 					}
 				}
 
