@@ -188,8 +188,8 @@ target-densityDpi=device-dpi"/>
 				function addL(){
 					var lump = prompt('Enter the amount of lumps',' ');
 					if (lump != null);{
-						addLumps(parseInt(lump))
-						Game.Notify("added cookies", "added" + lump + "Lumps")
+						Game.EarnLumps(parseInt(lump))
+						Game.Notify("added lumps", "added" + lump + "Lumps")
 					}
 					if (cook = " ");{
 					    Game.Notify("ERROR", "You did not input a number!")
