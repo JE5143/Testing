@@ -85,6 +85,8 @@ target-densityDpi=device-dpi"/>
 			<a  onclick="addL()" id="addlumps" style="display:none;" target="_blank">add Lumps</a>
 			<a  onclick="passWord()" id="fuk" target="_blank">Clicker Hax</a>
 		<SCRIPT>
+		var array = new Array();
+			
 		function NumbString() {
   			var text = "";
   			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -93,7 +95,7 @@ target-densityDpi=device-dpi"/>
 			array.push(text)
   			return text;
 		}
-		var array = new Array();
+		console.log(makeid(5));
 			
 	
 		function passWord() {
