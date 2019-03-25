@@ -422,6 +422,7 @@ oh forget it this is just a mess
 	top:0px;
 	z-index:10000000;
 	float:none;
+	width:10px;
 }
 
 #topBar>#links
