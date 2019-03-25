@@ -418,7 +418,7 @@ oh forget it this is just a mess
 {
 	display:block;
 	position:absolute;
-	right:0px;
+	left:1000px;
 	top:0px;
 	z-index:10000000;
 	float:none;
