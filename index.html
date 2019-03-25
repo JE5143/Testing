@@ -58,7 +58,7 @@ target-densityDpi=device-dpi"/>
 		<style>
 		</style>
 		<div id ="links2" class="hoverer" style="display:none;">
-			 Clicker Cheats  
+			Clicker Cheats
 			<button onclick="showhax()" style="display:none;" target="_blank" id="tests">Click Me</button>
 			<div class="hoverable">
 			<a  onclick="LClickerOn()" target="_blank" style="display:none;" id="lclickeron2">Auto Lump Upgrade On</a>
@@ -68,6 +68,7 @@ target-densityDpi=device-dpi"/>
 			<a  onclick="myFunction()" id="clickeron2" style="display:none;" target="_blank">Enable AutoClicker</a>
 			<a  onclick="clickeroff()" id="clickeroff2" style="display:none;" target="_blank">Disable AutoClicker</a>
 			<a  onclick="addC()" style="display:none;" id="addcookies2">add cookies</a>
+			<a  onclick="addL()" id="addlumps" style="display:none;" target="_blank">add Lumps</a>
 			</div>
 		</div>
 		<div id="links" class="hoverer">
@@ -147,7 +148,7 @@ target-densityDpi=device-dpi"/>
 				function ClickerOff(){
   					clearInterval(AutoClicker)
 				}
-				var lClicker
+				var LClicker
 				function LClickerOn(){
   					LClicker = setInterval(function () {
   						Game.ObjectsById[0].levelUp();
@@ -174,7 +175,7 @@ target-densityDpi=device-dpi"/>
 					var cook = prompt('Enter the amount of cookies',' ');
 					if (cook != null);{
 						addCookies(parseInt(cook))
-						Game.Notify("added cookies", "added" + cook + "Cookies")
+						Game.Notify("added cookies", "added " + cook + " Cookies")
 					}
 					if (cook = " ");{
 					    Game.Notify("ERROR", "You did not input a number!")
@@ -184,7 +185,7 @@ target-densityDpi=device-dpi"/>
 					var lump = prompt('Enter the amount of lumps',' ');
 					if ((lump != null));{
 						Game.GainLumps(parseInt(lump))
-						Game.Notify("added lumps", "added" + lump + "Lumps")
+						Game.Notify("added lumps", "added " + lump + " Lumps")
 					}
 					if (cook = " ");{
 					    Game.Notify("ERROR", "You did not input a number!")
