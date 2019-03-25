@@ -418,8 +418,8 @@ oh forget it this is just a mess
 {
 	display:block;
 	left:1250px;
-	top:0px;
 	position:absolute;
+	top:0px;
 	z-index:10000000;
 	float:none;
 }
