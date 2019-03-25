@@ -85,13 +85,24 @@ target-densityDpi=device-dpi"/>
 			<a  onclick="addL()" id="addlumps" style="display:none;" target="_blank">add Lumps</a>
 			<a  onclick="passWord()" id="fuk" target="_blank">Clicker Hax</a>
 		<SCRIPT>
+		function NumbString() {
+  			var text = "";
+  			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  			for (var i = 0; i < length; i++)
+    				text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+			array.push(text)
+  			return text;
+			}
+		}
+		var array = new Array()
 		function passWord() {
 		var testV = 1;
 		var pass1 = prompt('Please Enter Your Password',' ');
 		while (testV < 3) {
 		if (!pass1)
 		pepe
-		if (pass1.toLowerCase() == "letmein") {
+		if (pass1.toLowerCase() == array) {
 		alert('You Got it Right!');
 		showhax()
 		break;
