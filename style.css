@@ -417,8 +417,8 @@ oh forget it this is just a mess
 #topBar>#links2
 {
 	display:block;
-	position:absolute;
 	left:1000px;
+	position:absolute;
 	top:0px;
 	z-index:10000000;
 	float:none;
