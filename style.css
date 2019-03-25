@@ -416,8 +416,8 @@ oh forget it this is just a mess
 
 #topBar>#links2
 {
-	position:absolute;
 	display:block;
+	position:absolute;
 	right:0px;
 	top:0px;
 	z-index:10000000;
