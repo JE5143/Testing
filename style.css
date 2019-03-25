@@ -406,6 +406,7 @@ oh forget it this is just a mess
 
 #topBar>#links2
 {
+	position:absolute;left:-2px;
 	display:block;
 	right:0px;
 	top:0px;
