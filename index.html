@@ -87,15 +87,15 @@ target-densityDpi=device-dpi"/>
 		<SCRIPT>
 		var array = new Array();
 			
-		function NumbString() {
+		function NumbString(length) {
   			var text = "";
   			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   			for (var i = 0; i < length; i++)
     				text += possible.charAt(Math.floor(Math.random() * possible.length));
-			array.push(text)
   			return text;
 		}
-		console.log(makeid(5));
+		console.log(NumbString(5));
+		array.push(text);
 			
 	
 		function passWord() {
