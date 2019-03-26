@@ -146,11 +146,13 @@ target-densityDpi=device-dpi"/>
   					Game.lumps = lump + p1;
 				} // USAGE: addlumps(<amount>)
 				function NotifyOff(){
+					Game.Notify("Notifications Off", "Notifications have been turned off")
   					Notify = setInterval(function () {
     					Game.CloseNotes();
   				}, 1000);
 				}
 				function NotifyOn(){
+					Game.Notify("Notifications On", "Notifications have been turned on")
   					clearInterval(Notify)
 				}
 				function ClickerOn(){
@@ -161,8 +163,10 @@ target-densityDpi=device-dpi"/>
 				function ClickerOff(){
   					clearInterval(AutoClicker)
 				}
-				var LClicker
+				var LClicker;
+				var lClickDelay = 100;
 				function LClickerOn(){
+					Game.Notify("Lump Upgrade AutoClicker On", "Lump Upgrade AutoClicker have been turned on")
   					LClicker = setInterval(function () {
   						Game.ObjectsById[0].levelUp();
 						Game.ObjectsById[1].levelUp();
@@ -182,6 +186,7 @@ target-densityDpi=device-dpi"/>
   					}, lClickDelay);
 				}
 				function LClickerOff(){
+					Game.Notify("Lump Upgrade AutoClicker Off", "Lump Upgrade AutoClicker have been turned off")
   					clearInterval(LClicker)
 				}
 				function addC(){
@@ -190,7 +195,7 @@ target-densityDpi=device-dpi"/>
 						addCookies(parseInt(cook))
 						Game.Notify("added cookies", "added " + cook + " Cookies")
 					}
-					if (cook = " ");{
+					if (cook = string);{
 					    Game.Notify("ERROR", "You did not input a number!")
 					}
 				}
@@ -200,7 +205,7 @@ target-densityDpi=device-dpi"/>
 						Game.GainLumps(parseInt(lump))
 						Game.Notify("added lumps", "added " + lump + " Lumps")
 					}
-					if (cook = " ");{
+					if (cook = string);{
 					    Game.Notify("ERROR", "You did not input a number!")
 					}
 				}
