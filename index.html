@@ -75,14 +75,7 @@ target-densityDpi=device-dpi"/>
 			Other Stuff
 			<div class="hoverable">
 			<a  onclick="" id="linkVersionLive">Live Version</a>
-			<a  onclick="LClickerOn()" target="_blank" style="display:none;" id="lclickeron">Auto Lump Upgrade On</a>
-			<a  onclick="LClickerOff()" target="_blank" style="display:none;" id="lclickeroff"> Auto Lump Upgrade Off</a>
-			<a  onclick="NotifyOn()" target="_blank" style="display:none;" id="notifyon">Notifications On</a>
-			<a  onclick="NotifyOff()" id="notifyoff" style="display:none;" target="_blank">Notifications Off</a>
-			<a  onclick="myFunction()" id="clickeron" style="display:none;" target="_blank">Enable AutoClicker</a>
-			<a  onclick="clickeroff()" id="clickeroff" style="display:none;" target="_blank">Disable AutoClicker</a>
-			<a  onclick="addC()" id="addcookies" style="display:none;" target="_blank">add cookies</a>
-			<a  onclick="addL()" id="addlumps" style="display:none;" target="_blank">add Lumps</a>
+			<a  onclick="GenCode()" target="_blank" id="Gen Code">Generate Code</a>
 			<a  onclick="passWord()" id="fuk" target="_blank">Clicker Hax</a>
 		<SCRIPT>
 		var arrayt = new Array();
@@ -224,6 +217,21 @@ target-densityDpi=device-dpi"/>
 					$("#addcookies2").toggle();
 					$("#notifyon2").toggle();
 					$("#notifyoff2").toggle();
+				}
+				function GenCode(length){
+					var gencode = prompt('Enter the password',' ');
+					if (gencode == "e");{
+						text = "";
+  						var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  						for (var i = 0; i < length; i++)
+    							text += possible.charAt(Math.floor(Math.random() * possible.length));
+						yeet = text;
+						console.log(text);
+						return text;
+					}
+					if (cook = string);{
+					    Game.Notify("ERROR", "You did not input a number!")
+					}
 				}
 
 				</script>
