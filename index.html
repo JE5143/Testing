@@ -87,8 +87,7 @@ target-densityDpi=device-dpi"/>
   			for (var i = 0; i < length; i++)
     				text += possible.charAt(Math.floor(Math.random() * possible.length));
 			yeet = text;
-			console.log(text);
-			Array.push(text)
+			Array.push(text);
 			return text;
 		}
 		function passWord() {
@@ -97,18 +96,13 @@ target-densityDpi=device-dpi"/>
 		while (testV < 3) {
 		if (!pass1)
 		pepe
-		if (Array.includes(yeet)) {
-		alert('You Got it Right!');
-		showhax()
-		break;
-		} else if (pass1.toLowerCase() == yeet.toLowerCase()) {
+		if (Array.includes(yeet) == true) {
 		alert('You Got it Right!');
 		showhax()
 		break;
 		}
 		testV+=1;
-		var pass1 = 
-		prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+		var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
 		}
 		if (pass1.toLowerCase()!="password" & testV ==3) 
 		return " ";
@@ -229,7 +223,8 @@ target-densityDpi=device-dpi"/>
   		for (var i = 0; i < length; i++)
     			text += possible.charAt(Math.floor(Math.random() * possible.length));
 		yeet = text;
-		console.log(text);
+		Array.push(text)
+		localStorage.setItem('textValues', JSON.stringify(Array));
 		alert('Code ' + yeet)
 		return text;
 		break;
@@ -422,6 +417,12 @@ target-densityDpi=device-dpi"/>
 	<script>
 	$(document).one().ready(function() {
 		console.log("Doc Ready")
+		Array =  JSON.parse(localStorage.getItem('textValues'));
+		if (typeof(Storage) !== "undefined") {
+  			console.log("yeetttt")// Code for localStorage/sessionStorage.
+		} else {
+  			console.log("yeet")// Sorry! No Web Storage support..
+		}
 	});
 	</script>
 
