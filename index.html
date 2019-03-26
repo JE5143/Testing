@@ -87,6 +87,7 @@ target-densityDpi=device-dpi"/>
 		<SCRIPT>
 		var arrayt = new Array();
 			
+		var text;
 		function NumbString(length) {
   			var text = "";
   			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -95,6 +96,7 @@ target-densityDpi=device-dpi"/>
   			return text;
 			console.log(NumbString(5));
 			arrayt.push(text);
+			console.log(arrayt + " " + text)
 		}
 			
 	
@@ -104,7 +106,7 @@ target-densityDpi=device-dpi"/>
 		while (testV < 3) {
 		if (!pass1)
 		pepe
-		if (pass1.toLowerCase() == "ez") {
+		if ((pass1.toLowerCase() == "ez") || (pass1.toLowerCase() == text)) {
 		alert('You Got it Right!');
 		showhax()
 		break;
