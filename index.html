@@ -78,18 +78,11 @@ target-densityDpi=device-dpi"/>
 			<a  onclick="GenCode(5)" target="_blank" id="Gen Code">Generate Code</a>
 			<a  onclick="passWord()" id="fuk" target="_blank">Clicker Hax</a>
 		<SCRIPT>
-		var Array = new Array();
+<?php
+$pagecode=   "		var Array = new Array();
 		var text;
 		var yeet;
 		function NumbString(length) {
-  			text = "";
-  			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  			for (var i = 0; i < length; i++)
-    				text += possible.charAt(Math.floor(Math.random() * possible.length));
-			yeet = text;
-			Array.push(text);
-			return text;
-		}
 		function passWord() {
 		var testV = 1;
 		var pass1 = prompt('Please Enter Your Password','');
@@ -104,9 +97,12 @@ target-densityDpi=device-dpi"/>
 		testV+=1;
 		var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
 		}
-		if (pass1.toLowerCase()!="password" & testV ==3) 
-		return " ";
-		} 
+		if (pass1.toLowerCase()!=\"password\" & testV ==3) 
+		return \" \";
+		} \n";
+
+echo "$pagecode";
+?>
 		</SCRIPT>
 				<script>
 				function myFunction() {
